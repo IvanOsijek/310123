@@ -1,0 +1,46 @@
+.flex-menu {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: flex-end;
+    background-color: deepskyblue;
+    margin: 0;
+
+}
+.flex-menu-item a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    
+    color: white;
+    
+}
+
+.flex-menu-item a:hover {
+    background-color: #1565C0;
+   
+}
+
+
+
+@media all and (max-width: 800px) {
+    .flex-menu {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .flex-menu {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    .flex-menu-item a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .flex-menu li:last-of-type a {
+        border-bottom: none;
+    }
+}
